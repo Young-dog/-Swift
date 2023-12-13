@@ -14,6 +14,10 @@
 		2E49CBB52B1E4B8A00C60A4D /* ProjectFirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49CBB42B1E4B8A00C60A4D /* ProjectFirstTests.swift */; };
 		2E49CBBF2B1E4B8B00C60A4D /* ProjectFirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49CBBE2B1E4B8B00C60A4D /* ProjectFirstUITests.swift */; };
 		2E49CBC12B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49CBC02B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift */; };
+		2E6478AF2B21044A00FB22D5 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */; };
+		2E6478B12B21045A00FB22D5 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */; };
+		2E6478B32B21046B00FB22D5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */; };
+		2E6478B52B210C1A00FB22D5 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B42B210C1A00FB22D5 /* tabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		2E49CBBA2B1E4B8A00C60A4D /* ProjectFirstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectFirstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E49CBBE2B1E4B8B00C60A4D /* ProjectFirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFirstUITests.swift; sourceTree = "<group>"; };
 		2E49CBC02B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFirstUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		2E6478B42B210C1A00FB22D5 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				2E49CBA12B1E4B8700C60A4D /* ViewController.swift */,
 				2E49CBA62B1E4B8A00C60A4D /* Assets.xcassets */,
 				2E49CBAB2B1E4B8A00C60A4D /* Info.plist */,
+				2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */,
+				2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */,
+				2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */,
+				2E6478B42B210C1A00FB22D5 /* tabBar.swift */,
 			);
 			path = ProjectFirst;
 			sourceTree = "<group>";
@@ -253,6 +265,10 @@
 				2E49CBA22B1E4B8700C60A4D /* ViewController.swift in Sources */,
 				2E49CB9E2B1E4B8700C60A4D /* AppDelegate.swift in Sources */,
 				2E49CBA02B1E4B8700C60A4D /* SceneDelegate.swift in Sources */,
+				2E6478B12B21045A00FB22D5 /* GroupsViewController.swift in Sources */,
+				2E6478B32B21046B00FB22D5 /* PhotosViewController.swift in Sources */,
+				2E6478B52B210C1A00FB22D5 /* tabBar.swift in Sources */,
+				2E6478AF2B21044A00FB22D5 /* FriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

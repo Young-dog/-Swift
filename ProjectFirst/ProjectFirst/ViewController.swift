@@ -7,87 +7,109 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
+    
+    private let logo: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(systemName: "person")
+        //image.backgroundColor = .white
+        image.tintColor = .white
+        return image
+    } ()
+    
+    private let labelTitle: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .white
+        label.text = "Авторизация"
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 16
+        return label
+    } ()
 
-
-    let label = UILabel()
-    let loginField = UITextField()
-       let passwordField = UITextField()
-       let loginButton = UIButton()
+    private let emailField : UITextField = {
+        let field = UITextField()
+        field.backgroundColor = .white
+        field.placeholder = "Логин"
+        field.font = UIFont.boldSystemFont(ofSize: 25)
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = 16
+        return field
+    } ()
+    
+    private let passwordField : UITextField = {
+        let field = UITextField()
+        field.backgroundColor = .white
+        field.placeholder = "Пароль"
+        field.font = UIFont.boldSystemFont(ofSize: 25)
+        field.layer.masksToBounds = true
+        field.layer.cornerRadius = 16
+        return field
+    } ()
+    
+    private let submitButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Войти", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .white
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 16
+        return button
+    } ()
 
        override func viewDidLoad() {
            super.viewDidLoad()
-           createImageView()
-           createTitleLabel()
            
-           loginField.placeholder = "Логин"
-           passwordField.placeholder = "Пароль"
-           loginField.borderStyle = .roundedRect
-           passwordField.borderStyle = .roundedRect
-           
-           loginButton.setTitle("Войти", for: .normal)
-           loginButton.setTitleColor(.white, for: .normal)
-           loginButton.backgroundColor = .blue
-           loginButton.layer.cornerRadius = 5
-           
-           
-        view.addSubview(label)
-           view.addSubview(loginField)
-           view.addSubview(passwordField)
-           view.addSubview(loginButton)
-           
-           loginField.translatesAutoresizingMaskIntoConstraints = false
-           passwordField.translatesAutoresizingMaskIntoConstraints = false
-           loginButton.translatesAutoresizingMaskIntoConstraints = false
-           
-           NSLayoutConstraint.activate([
-            
-               loginField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               loginField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50),
-               loginField.widthAnchor.constraint(equalToConstant: 200),
-               
-               passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               passwordField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 50),
-               passwordField.widthAnchor.constraint(equalToConstant: 200),
-               
-               loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-               loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 150),
-               loginButton.widthAnchor.constraint(equalToConstant: 100),
-               loginButton.heightAnchor.constraint(equalToConstant: 30)
-           ])
+           view.backgroundColor = .black
+           setupView()
+           setupConstraints()
        }
-
-    func createTitleLabel() {
-        let titleLabel = UILabel()
-        titleLabel.text = "Авторизация"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 30)
-        titleLabel.textColor = .black
-        titleLabel.textAlignment = .center
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(titleLabel)
+    
+    private func setupView() {
+        view.addSubview(logo)
+        view.addSubview(emailField)
+        view.addSubview(passwordField)
+        view.addSubview(labelTitle)
+        view.addSubview(submitButton)
+    }
+    
+    private func setupConstraints() {
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        emailField.translatesAutoresizingMaskIntoConstraints = false
+        passwordField.translatesAutoresizingMaskIntoConstraints = false
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        submitButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            
+            logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logo.widthAnchor.constraint(equalToConstant: view.frame.size.width/2),
+            logo.heightAnchor.constraint(equalToConstant: 80),
+            
+            labelTitle.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 40),
+            labelTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            labelTitle.widthAnchor.constraint(equalToConstant: view.frame.size.width/1.1),
+            labelTitle.heightAnchor.constraint(equalToConstant: view.frame.size.height/17),
+            
+            emailField.topAnchor.constraint(equalTo: labelTitle.bottomAnchor, constant: 30),
+            emailField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            emailField.widthAnchor.constraint(equalToConstant: view.frame.size.width/2),
+            emailField.heightAnchor.constraint(equalToConstant: view.frame.size.height/17),
+            
+            passwordField.topAnchor.constraint(equalTo: emailField.bottomAnchor, constant: 20),
+            passwordField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            passwordField.widthAnchor.constraint(equalToConstant: view.frame.size.width/2),
+            passwordField.heightAnchor.constraint(equalToConstant: view.frame.size.height/17),
+            
+            submitButton.topAnchor.constraint(equalTo: passwordField.bottomAnchor, constant: 30),
+            submitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            submitButton.widthAnchor.constraint(equalToConstant: view.frame.size.width/1.5),
+            submitButton.heightAnchor.constraint(equalToConstant: view.frame.size.height/17),
         ])
-    }
-
-    func createImageView() {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "yourImage")
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(imageView)
         
-        NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
-            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 200),
-            imageView.heightAnchor.constraint(equalToConstant: 200)
-        ])
     }
-
 }
 
 #Preview {
