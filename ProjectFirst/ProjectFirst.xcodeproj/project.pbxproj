@@ -16,8 +16,12 @@
 		2E49CBC12B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E49CBC02B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift */; };
 		2E6478AF2B21044A00FB22D5 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */; };
 		2E6478B12B21045A00FB22D5 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */; };
-		2E6478B32B21046B00FB22D5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */; };
-		2E6478B52B210C1A00FB22D5 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6478B42B210C1A00FB22D5 /* tabBar.swift */; };
+		2EFBA9AB2B2B2C6C00204116 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AA2B2B2C6C00204116 /* TabBarController.swift */; };
+		2EFBA9AD2B2B310800204116 /* CustomFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AC2B2B310800204116 /* CustomFriendsTableViewCell.swift */; };
+		2EFBA9AF2B2B356C00204116 /* CustomGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AE2B2B356C00204116 /* CustomGroupsTableViewCell.swift */; };
+		2EFBA9B72B2B49A600204116 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9B62B2B49A600204116 /* ImageViewController.swift */; };
+		2EFBA9B92B2B49AC00204116 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9B82B2B49AC00204116 /* CustomCollectionViewCell.swift */; };
+		2EFBA9BB2B2B49B600204116 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9BA2B2B49B600204116 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,12 @@
 		2E49CBC02B1E4B8B00C60A4D /* ProjectFirstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFirstUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
-		2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		2E6478B42B210C1A00FB22D5 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		2EFBA9AA2B2B2C6C00204116 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2EFBA9AC2B2B310800204116 /* CustomFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		2EFBA9AE2B2B356C00204116 /* CustomGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		2EFBA9B62B2B49A600204116 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = "../../../../../../Downloads/Cities 2/Cities/ImageViewController.swift"; sourceTree = "<group>"; };
+		2EFBA9B82B2B49AC00204116 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCollectionViewCell.swift; path = "../../../../../../Downloads/Cities 2/Cities/CustomCollectionViewCell.swift"; sourceTree = "<group>"; };
+		2EFBA9BA2B2B49B600204116 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = "../../../../../../Downloads/Cities 2/Cities/PhotosViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +118,12 @@
 				2E49CBAB2B1E4B8A00C60A4D /* Info.plist */,
 				2E6478AE2B21044A00FB22D5 /* FriendsViewController.swift */,
 				2E6478B02B21045A00FB22D5 /* GroupsViewController.swift */,
-				2E6478B22B21046B00FB22D5 /* PhotosViewController.swift */,
-				2E6478B42B210C1A00FB22D5 /* tabBar.swift */,
+				2EFBA9AA2B2B2C6C00204116 /* TabBarController.swift */,
+				2EFBA9AC2B2B310800204116 /* CustomFriendsTableViewCell.swift */,
+				2EFBA9AE2B2B356C00204116 /* CustomGroupsTableViewCell.swift */,
+				2EFBA9BA2B2B49B600204116 /* PhotosViewController.swift */,
+				2EFBA9B82B2B49AC00204116 /* CustomCollectionViewCell.swift */,
+				2EFBA9B62B2B49A600204116 /* ImageViewController.swift */,
 			);
 			path = ProjectFirst;
 			sourceTree = "<group>";
@@ -262,13 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFBA9BB2B2B49B600204116 /* PhotosViewController.swift in Sources */,
 				2E49CBA22B1E4B8700C60A4D /* ViewController.swift in Sources */,
+				2EFBA9B72B2B49A600204116 /* ImageViewController.swift in Sources */,
 				2E49CB9E2B1E4B8700C60A4D /* AppDelegate.swift in Sources */,
+				2EFBA9AD2B2B310800204116 /* CustomFriendsTableViewCell.swift in Sources */,
 				2E49CBA02B1E4B8700C60A4D /* SceneDelegate.swift in Sources */,
 				2E6478B12B21045A00FB22D5 /* GroupsViewController.swift in Sources */,
-				2E6478B32B21046B00FB22D5 /* PhotosViewController.swift in Sources */,
-				2E6478B52B210C1A00FB22D5 /* tabBar.swift in Sources */,
+				2EFBA9AB2B2B2C6C00204116 /* TabBarController.swift in Sources */,
+				2EFBA9AF2B2B356C00204116 /* CustomGroupsTableViewCell.swift in Sources */,
 				2E6478AF2B21044A00FB22D5 /* FriendsViewController.swift in Sources */,
+				2EFBA9B92B2B49AC00204116 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

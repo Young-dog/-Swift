@@ -15,27 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         
-        let tabBarController = UITabBarController()
         
-        let friendsViewController = FriendsViewController()
-        
-        let groupsViewController = GroupsViewController()
-        
-        let photosViewController = PhotosViewController()
-        
-        friendsViewController.tabBarItem.title = "Friends"
-        
-        groupsViewController.tabBarItem.title = "Groups"
-        
-        photosViewController.tabBarItem.title = "Photos"
-
-        let controllers = [friendsViewController, groupsViewController, photosViewController]
-        
-        //tabBarController.tabBar.layer.borderWidth = 1
-        
-        tabBarController.viewControllers = controllers
-        
-        let navigationController = UINavigationController(rootViewController: tabBarController)
+        let navigationController = UINavigationController(rootViewController: ViewController())
         
         window = UIWindow(windowScene: scene)
         window?.rootViewController = navigationController

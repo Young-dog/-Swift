@@ -64,6 +64,7 @@ class ViewController: UIViewController  {
            view.backgroundColor = .black
            setupView()
            setupConstraints()
+           submitButton.addTarget(self, action: #selector(onTap), for: .touchUpInside)
        }
     
     private func setupView() {
@@ -109,6 +110,10 @@ class ViewController: UIViewController  {
             submitButton.heightAnchor.constraint(equalToConstant: view.frame.size.height/17),
         ])
         
+    }
+    
+    @objc func onTap() {
+        navigationController?.pushViewController(TabBarController(), animated: true)
     }
 }
 
