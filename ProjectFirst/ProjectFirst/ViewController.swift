@@ -22,7 +22,7 @@ class ViewController: UIViewController  {
         view.backgroundColor = .white
         setupViews()
         
-        let url = URL(string: "https://oauth.vk.com/authorize?client_id=51815231&redirect_uri=https://oauth.vk.com/blank.html&display=mobile&scope=262150&response_type=token")
+        let url = URL(string: "https://oauth.vk.com/authorize?client_id=51815230&redirect_uri=https://oauth.vk.com/blank.html&display=mobile&scope=262150&response_type=token")
         
         webView.load(URLRequest(url: url!))
     }
@@ -32,7 +32,10 @@ class ViewController: UIViewController  {
     }
     
     @objc func onTap() {
-        navigationController?.pushViewController(TabBarController(), animated: true)
+        
+    let controller = TabBarController()
+        controller.navigationItem.hidesBackButton = true
+        navigationController?.pushViewController(controller, animated: true)
     }
     
    

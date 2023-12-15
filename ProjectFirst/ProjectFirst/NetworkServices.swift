@@ -19,11 +19,16 @@ protocol NetworkServicePhotosDelegate : AnyObject {
     func updatePhotos(photos: [Size])
 }
 
+protocol NetworkServiceProfileDelegate : AnyObject {
+    func updateProfile(profile: Profile)
+}
+
 class NetworkServices {
     private let session = URLSession.shared
     weak var friendsDelegate: NetworkServiceDelegate?
     weak var groupsDelegate: NetworkServiceGroupsDelegate?
     weak var photosDelegate: NetworkServicePhotosDelegate?
+    weak var profileDelegate: NetworkServiceProfileDelegate?
     
     static var token = ""
     
@@ -84,4 +89,21 @@ class NetworkServices {
         }.resume()
         
     }
+    
+    func getProfile() {
+        
+        guard let url = URL(string: "https://api.vk.com/method/users.get?access_token=\(NetworkServices.token)&v=5.199&fields=photo") else {return}
+    
+        session.dataTask(with: url) {
+            [weak self] data, response, error in guard let data else {return}
+            
+            do {
+                let profile = try JSONDecoder().decode(ProfileResult.self, from: data).response
+                self?.profileDelegate?.updateProfile(profile: profile.first ?? Profile(id: 0, photo: "", firstName: "", lastName: ""))
+            } catch {
+                print(error)
+            }
+        }.resume()
+    }
+    
 }

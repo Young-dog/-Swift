@@ -22,6 +22,8 @@
 		2E6D06C42B2BC40E00CBC630 /* ProfilePhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D06C32B2BC40E00CBC630 /* ProfilePhotos.swift */; };
 		2EDD43EA2B2C578C00B675F2 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD43E92B2C578C00B675F2 /* UIImageViewExtension.swift */; };
 		2EDD43EC2B2C588B00B675F2 /* NetworkImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD43EB2B2C588B00B675F2 /* NetworkImageModel.swift */; };
+		2EDD44602B2C974A00B675F2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD445F2B2C974A00B675F2 /* ProfileViewController.swift */; };
+		2EDD44622B2C9A2400B675F2 /* ProfileResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD44612B2C9A2400B675F2 /* ProfileResult.swift */; };
 		2EFBA9AB2B2B2C6C00204116 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AA2B2B2C6C00204116 /* TabBarController.swift */; };
 		2EFBA9AD2B2B310800204116 /* CustomFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AC2B2B310800204116 /* CustomFriendsTableViewCell.swift */; };
 		2EFBA9AF2B2B356C00204116 /* CustomGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFBA9AE2B2B356C00204116 /* CustomGroupsTableViewCell.swift */; };
@@ -67,6 +69,8 @@
 		2E6D06C32B2BC40E00CBC630 /* ProfilePhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotos.swift; sourceTree = "<group>"; };
 		2EDD43E92B2C578C00B675F2 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		2EDD43EB2B2C588B00B675F2 /* NetworkImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageModel.swift; sourceTree = "<group>"; };
+		2EDD445F2B2C974A00B675F2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2EDD44612B2C9A2400B675F2 /* ProfileResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResult.swift; sourceTree = "<group>"; };
 		2EFBA9AA2B2B2C6C00204116 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2EFBA9AC2B2B310800204116 /* CustomFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFriendsTableViewCell.swift; sourceTree = "<group>"; };
 		2EFBA9AE2B2B356C00204116 /* CustomGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGroupsTableViewCell.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				2EFBA9B82B2B49AC00204116 /* CustomCollectionViewCell.swift */,
 				2EFBA9B62B2B49A600204116 /* ImageViewController.swift */,
 				2E6D06BC2B2BBA9500CBC630 /* NetworkServices.swift */,
+				2EDD445F2B2C974A00B675F2 /* ProfileViewController.swift */,
 			);
 			path = ProjectFirst;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				2E6D06C32B2BC40E00CBC630 /* ProfilePhotos.swift */,
 				2EDD43E92B2C578C00B675F2 /* UIImageViewExtension.swift */,
 				2EDD43EB2B2C588B00B675F2 /* NetworkImageModel.swift */,
+				2EDD44612B2C9A2400B675F2 /* ProfileResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 			files = (
 				2EFBA9BB2B2B49B600204116 /* PhotosViewController.swift in Sources */,
 				2E49CBA22B1E4B8700C60A4D /* ViewController.swift in Sources */,
+				2EDD44622B2C9A2400B675F2 /* ProfileResult.swift in Sources */,
 				2EFBA9B72B2B49A600204116 /* ImageViewController.swift in Sources */,
 				2E6D06C02B2BBFDD00CBC630 /* Friends.swift in Sources */,
 				2E49CB9E2B1E4B8700C60A4D /* AppDelegate.swift in Sources */,
 				2EFBA9AD2B2B310800204116 /* CustomFriendsTableViewCell.swift in Sources */,
+				2EDD44602B2C974A00B675F2 /* ProfileViewController.swift in Sources */,
 				2E6D06C42B2BC40E00CBC630 /* ProfilePhotos.swift in Sources */,
 				2E49CBA02B1E4B8700C60A4D /* SceneDelegate.swift in Sources */,
 				2E6D06BD2B2BBA9600CBC630 /* NetworkServices.swift in Sources */,
