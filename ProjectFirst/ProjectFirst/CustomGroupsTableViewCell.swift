@@ -4,6 +4,9 @@ import UIKit
 
 final class CustomGroupsTableViewCell: UITableViewCell {
     
+    
+    static let identifier = "CustomGroupsTableViewCell"
+    
     private let labelName: UILabel = {
         let label = UILabel()
         label.text = "Name"
@@ -24,10 +27,8 @@ final class CustomGroupsTableViewCell: UITableViewCell {
         return label
     } ()
     
-    private let circleView: UIView = {
-        let view = UIView()
-        view.layer.borderWidth = 1
-        view.layer.cornerRadius = 25
+    private let circleView: UIImageView = {
+        let view = UIImageView()
         return view
     }()
     
@@ -39,6 +40,11 @@ final class CustomGroupsTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureCell(group: Group) {
+        labelName.text = group.name
+        labelDescription.text = group.description
     }
     
     private func addSubviews() {
@@ -73,6 +79,6 @@ final class CustomGroupsTableViewCell: UITableViewCell {
     }
 }
 
-#Preview {
-    CustomGroupsTableViewCell()
-}
+//#Preview {
+//    CustomGroupsTableViewCell()
+//}

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+struct GroupsResult : Decodable {
+    let response : Groups
+}
+
+struct Groups : Decodable {
+    let items : [Group]
+}
+
+struct Group : Decodable {
+    let id : Int
+    let name : String
+    let description : String
+}

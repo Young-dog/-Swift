@@ -8,7 +8,7 @@
 import UIKit
 
 final class CustomFriendsTableViewCell: UITableViewCell {
-    
+    static let identifier = "CustomFriendsTableViewCell"
     
     private let label: UILabel = {
         let label = UILabel()
@@ -20,10 +20,8 @@ final class CustomFriendsTableViewCell: UITableViewCell {
         return label
     } ()
     
-    private let circleView: UIView = {
-        let view = UIView()
-        view.layer.borderWidth = 1
-        view.layer.cornerRadius = 25
+    private let circleView: UIImageView = {
+        let view = UIImageView()
         return view
     }()
     
@@ -35,6 +33,11 @@ final class CustomFriendsTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureCell(friend: Friend) {
+        label.text = "\(friend.lastName) \(friend.firstName)"
+        circleView.getImage(imageUrl: friend.photo200Orig)
     }
     
     private func addSubviews() {
@@ -61,6 +64,6 @@ final class CustomFriendsTableViewCell: UITableViewCell {
     }
 }
 
-#Preview {
-    CustomFriendsTableViewCell()
-}
+//#Preview {
+//    CustomFriendsTableViewCell()
+//}
